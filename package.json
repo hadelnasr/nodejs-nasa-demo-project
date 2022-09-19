@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run watch --prefix server",
+    "client": "npm run start --prefix client",
+    "watch": "npm run server & npm run client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadelnasr/nodejs-nasa-demo-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hadelnasr/nodejs-nasa-demo-project/issues"
+  },
+  "homepage": "https://github.com/hadelnasr/nodejs-nasa-demo-project#readme"
+}
