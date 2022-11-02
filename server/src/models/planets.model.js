@@ -19,7 +19,7 @@ function loadPlanetsData() {
         }))
         .on('data', (data) => {
             if (isHabitablePlanet(data)) {
-            habitablePlanets.push(data);
+                habitablePlanets.push(data);
             }
         })
         .on('error', (err) => {
