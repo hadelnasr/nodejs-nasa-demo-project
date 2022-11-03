@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const launchesSchema = mongoose.Schema({
+const launchesSchema = new mongoose.Schema({
     flightNumber: {
         type: Number,
         required: true
@@ -32,3 +32,6 @@ const launchesSchema = mongoose.Schema({
         default: true
     },
 });
+
+// connects launchesSchema with the "launches" collection
+module.exports = mongoose.model('Launch', launchesSchema);
